@@ -22,6 +22,7 @@ header{
 #propic{width: 150px;
         height: 150px;
         border-radius: 50%;
+        object-fit: cover;
         border: 2px solid #FFED68;
         margin: 30px;
         max-width: 100%;}
@@ -44,7 +45,7 @@ header{
         width: 800px;}
 
 h2, h3, h4 {font-family: "Neuton", serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     font-size: 32px;
     text-align: center;
@@ -62,7 +63,9 @@ margin: 50px}
 h1{text-align: center;
     color: #FFED68;
     margin: 100px;
-    font-family: 'Times New Roman', Times, serif;
+   font-family: "Neuton", serif;
+    font-weight: 300;
+    font-style:normal;
     font-size: 48px;}
 
 #logomain{max-width: 100%;
@@ -83,7 +86,7 @@ footer{display: flex;
 
 h5{text-align: center;
     font-family: "Neuton", serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style:normal;
     font-size: 40px;
     color: #FFED68;
@@ -94,7 +97,7 @@ h5{text-align: center;
 
 h6{text-align: center;
     font-family: "Neuton", serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style:normal;
     font-size: 40px;
     color: #FFED68;
@@ -119,9 +122,10 @@ object-fit: contain;}
     text-align: justify;
     color: #FFED68;
     font-size: 16px;
-    font-family: "Lora", serif;
+    font-family: "Neuton", serif;
+    font-weight: 300;
+    font-style:normal;
       font-optical-sizing: auto;
-      font-weight: 400;
       font-style: normal;
       width: 1000px;
       margin: 50px;
@@ -131,10 +135,10 @@ object-fit: contain;}
     justify-content: center;
     color:#FFED68;
     font-size: 16px;
-    font-family: "Lora", serif;
+    font-family: "Neuton", serif;
+    font-weight: 300;
+    font-style:normal;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     margin: 60px;
     text-align:justify;
     width: 900px;
@@ -144,10 +148,10 @@ object-fit: contain;}
         justify-content: center;
         color:#FFED68;
         font-size: 16px;
-        font-family: "Lora", serif;
+       font-family: "Neuton", serif;
+       font-weight: 300;
+       font-style:normal;
         font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
         margin: 60px;
         text-align:justify;
         margin-left: auto;
@@ -197,15 +201,22 @@ object-fit: contain;}
     justify-content:right;
     color:#FFED68;
     font-size: 14px;
-    font-family: "Lora", serif;
+    font-family: "Neuton", serif;
+    font-weight: 300;
+    font-style:normal;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     margin: 60px;
     text-align:justify;
     width: 900px;}
 
-a{text-decoration: none;}
+        a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
 
 #immagini{display: flex;
     flex-wrap: wrap;
@@ -241,13 +252,13 @@ a{text-decoration: none;}
         #propic{width: 100px;
             height: 100px;
             margin: 20px;
-            max-width: 100%;}
+            max-width: 100%;
+            object-fit: cover;}
     
         #sfondoheader{
                 max-width: 80%;
                 height: 150px;
-                background-size:cover;
-                background-position-y: -100px;}
+                background-position: center;}
     
         #sezioni{display: flex;
                     justify-content: space-around;
@@ -265,7 +276,7 @@ a{text-decoration: none;}
     
 
         #logomain{max-width: 100%;
-            height: 500px;
+
             margin: 20px;
             margin-bottom: 100px;
             margin-left: -20px;}
@@ -285,9 +296,9 @@ a{text-decoration: none;}
                 padding-bottom: 7px;}
 
         #ig, #tiktok, #github, #telegram
-                {max-width: 100%;
-                height: 32px;
-                }
+        {max-width: 100%;
+        height: 120px;
+        object-fit: contain;}
 
         #contattimain{max-width: 100%;
                     height: auto;}
@@ -342,6 +353,19 @@ a{text-decoration: none;}
                 .icone{display: flex;
                 height: auto;
                 max-width: fit-content;}
-        
+
+        a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+       h2, h3, h4 {
+    -webkit-tap-highlight-color: transparent;
+}
+        }
 
         }
